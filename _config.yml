@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Un Canard Symplectique
-logo : "/assets/images/profil.png"
+logo : "/assets/images/logo.png"
 email:
 description: >- # this means to ignore newlines until "baseurl:"
   Site non professionnel pour opinions personnelles et errances diverses
@@ -60,7 +60,7 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "Me &#x2197;"
+  name   : "Kwhat ?!" # "Me &#x2197;"
   avatar : "/assets/images/profil.png"
   bio    : "Site non professionnel pour opinions personnelles et errances diverses."
   links:
