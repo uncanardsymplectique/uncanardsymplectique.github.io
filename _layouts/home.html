@@ -1,0 +1,40 @@
+---
+layout: archive
+---
+
+{{ content }}
+
+<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Catégories" }}</h3>
+
+{% for category in site.categories %}
+  <h4>{{ category[0] }}</h4>
+
+        <img src="assets/images/{{ category[0] }}.png" alt="{{ category[0] }}" width="200" height="200">
+
+<!--  
+  <ul>
+    {% for post in category[1] %}
+
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+  -->
+
+{% endfor %}
+
+<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Dernière bafouille" }}</h3>
+
+{% if paginator %}
+  {% assign posts = paginator.posts %}
+{% else %}
+  {% assign posts = site.posts %}
+{% endif %}
+
+{% for post in posts %}
+  {% include archive-single.html %}
+{% endfor %}
+
+<!--
+{% include paginator.html %}
+-->
+
