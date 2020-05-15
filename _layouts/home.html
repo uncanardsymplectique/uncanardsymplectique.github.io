@@ -4,25 +4,36 @@ layout: archive
 
 {{ content }}
 
-<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Catégories" }}</h3>
+{% include feature_row %}
+{% include feature_row id="feature_row2" %}
+
+<!--
+
+{% include gallery id="gallery2" layout='half' caption="This is a sample gallery with **Markdown support**." %}
+
+<!--  
 
 {% for category in site.categories %}
   <h4>{{ category[0] }}</h4>
 
-        <img src="assets/images/{{ category[0] }}.png" alt="{{ category[0] }}" width="200" height="200">
+   <img src="assets/images/{{ category[0] }}.png" alt="{{ category[0] }}" width="200" height="200">
 
-<!--  
+
   <ul>
     {% for post in category[1] %}
 
       <li><a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
-  -->
 
 {% endfor %}
+-->
 
-<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Dernière bafouille" }}</h3>
+
+<br><br>
+        <img src="assets/images/UnCanard.png" alt="Un canard, gardien." width="450">
+
+<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Dernière idiotie" }}</h3>
 
 {% if paginator %}
   {% assign posts = paginator.posts %}
