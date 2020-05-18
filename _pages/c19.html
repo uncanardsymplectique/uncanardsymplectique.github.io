@@ -1,0 +1,25 @@
+---
+layout: archive
+title: "Projet Python (covid-19)"
+excerpt: ""
+permalink: /c19/
+author_profile: true
+---
+
+Je voulais apprendre à utiliser Python pour le traitement de données. M'intéresser aux données concernant l'épidémie de covid-19 répondait à cette envie et au besoin d'avoir accès à des chiffres pertinents. (Voir post à venir sur les "cas detectés", les "cas confirmés" etc...)<br>
+<br>
+Chaque page listée ci-dessous est générée par à partir d'un notebook ipython.
+
+<p class="notice--warning"><strong>Attention !</strong> Je viens juste d'intégrer ces pages à ce site, il y a des inconsistances (liens depuis les pages qui sont cassés, etc.) qui seront vite réparées. (Désolé.)</p>
+
+<ul>
+  {% for p in site.c19 %}
+    <li>
+      {{ p.excerpt }} : <a href="{{ p.url }}">{{ p.zone }}</a>
+<!--      <p>{{ author.content | markdownify }}</p>  -->
+    </li>
+  {% endfor %}
+</ul>
+
+<p class="notice--primary"><strong>À faire !</strong> À (pas mal) plus long terme, maintenant que je comprends mieux Github etc, l'idée sera d'en faire un projet et de l'intégrer au site (lui-même hosté par Github) mais d'ici là...</p>
+
