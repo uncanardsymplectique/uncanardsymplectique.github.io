@@ -6,6 +6,8 @@ permalink: /parlons-en/
 author_profile: true
 ---
 
+La série qui renaît de ses cendres tel <strike>le phénix</strike> Félix (le canard) ...
+
 <ul class="taxonomy__index">
   {% assign peInYear = site.parlons-en | group_by_exp: 'pe', 'pe.date | date: "%Y"' | reverse %}
   {% for year in peInYear %}

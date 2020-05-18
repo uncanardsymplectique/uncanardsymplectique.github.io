@@ -134,6 +134,9 @@ collections:
   parlons-en:
     output: true
     permalink: /parlons-en/:name
+  metamaths:
+    output: true
+    permalink: /metamaths/:name
 
 defaults:
   - scope:
@@ -145,4 +148,8 @@ defaults:
     values:
       layout: parlons-en
       author_profile: true
+  - scope:
+      type: metamaths
+    values:
+      layout: default
       

@@ -17,9 +17,15 @@ author_profile: true
 layout: archive
 ---
 
-Bienvenu sur cette magnifique série constituée d'une (1 !) errance. Ah ben oui, il faut bien commencer quelque part (et donc pourquoi pas à 1 ?).
+Bienvenu sur cette magnifique série constituée d'une (1 !) errance, méta-mathématique celle-ci. Il faut bien commencer quelque part (et donc pourquoi pas à 1 ?).
 
-L'idée était de comprende comment on fait des _nuages de mots_. Et bien c'est très facile, beaucoup plus facile que de trouver des textes subjectivement intéressants à partir desquels constuire ledit nuage.
+L'idée était de comprende comment réaliser des _nuages de mots_. Après en avoir vu plusieurs, tous très jolis et cetains informatifs,
+
+pas d'idée du texte ni de la forme.
+juste savoir faire.
+Doit être très cpompliqué.
+
+Et bien c'est très facile, beaucoup plus facile que de trouver des textes subjectivement intéressants à partir desquels constuire ledit nuage.
 
 Je ne mens pas, pour avoir un nuage de mots en forme de _truc_, il suffit de (de quelques librairies, un dessin de _truc_ et de) :
 
