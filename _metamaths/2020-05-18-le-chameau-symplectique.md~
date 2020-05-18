@@ -1,0 +1,45 @@
+---
+title: "Le chameau symplectique --- Brouillon !"
+date: 2020-05-18
+categories:
+  - blog
+  - humour
+  - (méta-)maths
+  - projets python
+tags:
+  - gouvernement
+  - Macron
+  - private
+excerpt: ""
+# à retirer quand il y aura plus de page :
+permalink: /metamaths/
+author_profile: true
+layout: archive
+---
+
+Bienvenu sur cette magnifique série constituée d'une (1 !) errance. Ah ben oui, il faut bien commencer quelque part (et donc pourquoi pas à 1 ?).
+
+L'idée était de comprende comment on fait des _nuages de mots_. Et bien c'est très facile, beaucoup plus facile que de trouver des textes subjectivement intéressants à partir desquels constuire le dit nuage.
+
+Je ne mens pas, pour avoir un nuage de mots en forme de _truc_, il suffit de (de quelques librairies, un dessin de _truc_ et de) :
+
+```ruby
+mon_truc = np.array(Image.open("mon_dessin_de_truc.png"))
+wc = WordCloud(background_color="white", max_words=2000, mask=mon_truc,
+               stopwords=sw, contour_width=0, contour_color='steelblue')
+# generate word cloud
+wc.generate(mon_texte_plein_de_mots)
+# store to file
+wc.to_file("mon_truc_plein_de_mots.png")
+```
+
+Le plus dur c'est bien de trouver le texte-plein-de-mots si possibles pertinents et le dessin-de-truc si possible en rapport.
+
+Après réflexion, super idée : titres + résumés d'articles sur l'arXiv.
+Après (quelques heures de) recherches, on peut "se servir".
+
+Donc mon premier essai a donné ça, avec comme paramètres
+- _truc_ = chameau,
+- mon_texte_plein_de_mots = titres et résumés des articles dont le primary = SG, en 2019 :
+
+![le chameau symplectique](/assets/images/metamaths/le-chameau-symplectique-2019.png)
