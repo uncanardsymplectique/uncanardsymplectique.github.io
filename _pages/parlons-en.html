@@ -1,0 +1,32 @@
+---
+layout: archive
+title: "Parlons-en ..."
+excerpt: ""
+permalink: /parlons-en/
+author_profile: true
+---
+
+<ul class="taxonomy__index">
+  {% assign peInYear = site.parlons-en | group_by_exp: 'pe', 'pe.date | date: "%Y"' | reverse %}
+  {% for year in peInYear %}
+    <li>
+      <a href="#{{ year.name }}">
+        <strong>{{ year.name }}</strong> <span class="taxonomy__count">{{ year.items | size }}</span>
+      </a>
+    </li>
+  {% endfor %}
+</ul>
+
+{% assign peByYear = site.parlons-en | group_by_exp: 'pe', 'pe.date | date: "%Y"' | reverse %}
+{% for year in peByYear %}
+  <section id="{{ year.name }}" class="taxonomy__section">
+    <h2 class="archive__subtitle">{{ year.name }}</h2>
+    <div class="entries-{{ page.entries_layout | default: 'list' }}">
+      {% assign list = year.items | reverse %}
+      {% for pe in list %}
+      <a href="{{ pe.url }}">{{ pe.short }}</a>  ({{ pe.date | date: "%d/%m/%Y" }})<br>
+      {% endfor %}
+    </div>
+    <a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
+  </section>
+{% endfor %}

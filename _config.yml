@@ -131,9 +131,18 @@ collections:
   c19:
     output: true
     permalink: /c19/:name
+  parlons-en:
+    output: true
+    permalink: /parlons-en/:name
 
 defaults:
   - scope:
       type: c19
     values:
       layout: default
+  - scope:
+      type: parlons-en
+    values:
+      layout: parlons-en
+      author_profile: true
+      

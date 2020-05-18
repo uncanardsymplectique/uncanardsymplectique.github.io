@@ -6,8 +6,10 @@ layout: archive
 
 <img src="assets/images/UnCanard.png" alt="Un canard, gardien." class="align-center">
 
-<br><br>
 
+
+<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Des errances en séries" }}</h3>
+<br>
 {% include feature_row %}
 
 <!--
@@ -33,7 +35,7 @@ layout: archive
 -->
 
 
-<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Dernières idioties" }}</h3>
+<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Dernières idioties anecdotiques" }}</h3>
 
 {% if paginator %}
   {% assign posts = paginator.posts %}
