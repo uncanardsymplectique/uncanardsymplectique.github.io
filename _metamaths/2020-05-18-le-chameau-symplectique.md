@@ -94,6 +94,6 @@ C'est en cherchant à faire le chamadaire symplectique que m'est venu le canard 
 C'est ce logo qui a ensuite donné le nom au blog. C'est dire que j'en suis content...
 
 ![WordCloudeption](/assets/images/metamaths/wordcloudeption.png "Un nuage de mots dans un nuage de mots -- Haaaa, help Leonardo! "){: .align-left}
-Pour finir, je n'ai pas pu résister et je conclus avec ce petit [WordCloudeption](https://knowyourmeme.com/memes/subcultures/inception/photos/trending/page/2?gallery_cache_key=) : un [nuage de mots](https://en.wikipedia.org/wiki/Tag_cloud) (Wikipedia, en) dans un nuage de mots, en forme de nuage (que j'ai fièrement dessiné moi-même --- quel talent !).
+Pour finir, je n'ai pas pu résister devant un petit [WordCloudeption](https://knowyourmeme.com/memes/subcultures/inception/photos/trending/page/2?gallery_cache_key=) : la page [nuage de mots](https://en.wikipedia.org/wiki/Tag_cloud) (Wikipedia, en) dans un nuage de mots, en forme de nuage (que j'ai dessiné moi-même --- quel talent !).
 
 The end.
