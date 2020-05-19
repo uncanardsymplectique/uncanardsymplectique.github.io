@@ -1,6 +1,7 @@
 ---
 title: "Le chameau symplectique"
-date: 2020-05-18
+date: 2020-05-19
+# last_modified_at: 2020-05-19T16:20:02-05:00
 categories:
   - blog
   - (méta-)maths
@@ -86,13 +87,13 @@ Je vais aussi reproduire l'expérience en retirant les mots trop "à la base" du
 J'ai plein d'autres idées de choses à faire avec les métadonnées extraites de l'arXiv...
 
 ###### Side(& site)-products.
-![logo](/assets/images/metamaths/le-canard-symplectique.png){: .align-right}
+![logo](/assets/images/metamaths/le-canard-symplectique.png "Résumé saisissant de ma carrière mathématique..."){: .align-right}
 
 C'est en cherchant à faire le chamadaire symplectique que m'est venu le canard du même nom qui sert de logo à ce blog. Le principe est le même, le masque est un canard (si si), et le texte est constitué des titres et résumés de mes articles (et autres textes non publiés).
 
 C'est ce logo qui a ensuite donné le nom au blog. C'est dire que j'en suis content...
 
-![WordCloudeption](/assets/images/metamaths/wordcloudeption.png "Un nuage de mots venant de "){: .align-left}
+![WordCloudeption](/assets/images/metamaths/wordcloudeption.png "Un nuage de mots dans un nuage de mots -- Haaaa, help Leonardo! "){: .align-left}
 Pour finir, je n'ai pas pu résister et je conclus avec ce petit [WordCloudeption](https://knowyourmeme.com/memes/subcultures/inception/photos/trending/page/2?gallery_cache_key=) : un [nuage de mots](https://en.wikipedia.org/wiki/Tag_cloud) (Wikipedia, en) dans un nuage de mots, en forme de nuage (que j'ai fièrement dessiné moi-même --- quel talent !).
 
 The end.
