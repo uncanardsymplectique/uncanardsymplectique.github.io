@@ -1,5 +1,5 @@
 ---
-title: "Covid-19 : more exponential curves"
+title: "Covid-19 : more exponential curves (draft)"
 date: 2020-05-14T13:35:30+02:00
 categories:
   - python projects
