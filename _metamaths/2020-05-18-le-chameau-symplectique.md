@@ -15,6 +15,7 @@ excerpt: "Mon premier nuage de mots."
 permalink: /metamaths/
 author_profile: true
 layout: single
+classes: wide
 ---
 
 Bienvenu(e) sur cette magnifique série méta-mathématique constituée d'un gros total d'une (1 !) errance. (Quitte à commencer quelque part, j'ai préféré commencer à 1.)
