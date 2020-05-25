@@ -2,7 +2,12 @@
 layout: archive
 ---
 
-<img src="/assets/images/p-e/{{ page.image }}" alt="{{ page.titre }}" title="{{ page.hover }}" class="align-center">
+<img src="/assets/images/p-e/{{ page.image }}" alt="{{ page.titre }}" title="{{ page.hover }}" style="max-width: 510px">
 
 <br>
+{% unless page.excerpt == "" %}
 {{ page.excerpt }}
+<br>
+{% endunless %}
+<br>
+{% include Parlons-en-prev-next.html %}
