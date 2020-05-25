@@ -9,9 +9,6 @@ categories:
   - humour
   - parlons-en
 tags:
-  - gouvernement
-  - Macron
 excerpt: "_Meme_ pas mal"
 hover: "Dieu sait qu'il y a de la place dans la restauration pour un poulet..."
 ---
-

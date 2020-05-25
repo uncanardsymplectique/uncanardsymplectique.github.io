@@ -9,10 +9,6 @@ categories:
   - humour
   - parlons-en
 tags:
-  - gouvernement
-  - éducation nationale
 excerpt: "Du nouveau au ministère de la magie..."
 hover: "Cette planche me ferait sourire, si ce n'était pas effectivement les arguments du ministère..."
 ---
-
-

@@ -9,10 +9,6 @@ categories:
   - humour
   - parlons-en
 tags:
-  - gouvernement
-  - Macron
-  - private
 excerpt: ""
 hover: "On a vu pire comme idée de carrière..."
 ---
-
