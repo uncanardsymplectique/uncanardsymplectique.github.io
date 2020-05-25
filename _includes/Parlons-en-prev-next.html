@@ -1,0 +1,53 @@
+{% capture the_collection %}{{ page.collection }}{% endcapture %}
+
+{% if page.collection %}
+  {% assign document = site[the_collection] %}
+{% endif %}
+
+{% for links in document %}
+  {% if links.title == page.title %}
+    {% unless forloop.first %}
+      {% assign prevurl = prev.url %}
+      {% assign prevtitle = prev.short %}
+    {% endunless %}
+    {% unless forloop.last %}
+      {% assign next = document[forloop.index] %}
+      {% assign nexttitle = next.short %}
+      {% assign nexturl = next.url %}
+    {% endunless %}
+  {% endif %}
+  {% if forloop.first %}
+    {% assign premier = links %}
+  {% endif %}
+  {% if forloop.last %}
+    {% assign dernier = links %}
+  {% endif %}
+  {% assign prev = links %}
+{% endfor %}
+
+<a href="{{ premier.url }}" class="btn btn--primary btn--small" title="{{ premier.short }}"> First! </a>
+
+{% if prevurl %}
+<a href="{{ prevurl }}" class="btn btn--primary btn--small" title="{{ prevtitle }} (flèche <)"> Précédent </a>
+{% else %}
+<a href="" class="btn btn--inverse btn--small" title="C'est le premier !!"> <strike>Précédent</strike> </a>
+{% endif %}
+
+<a href="/parlons-en/" class="btn btn--primary btn--small"> Menu </a>
+
+{% if nexturl %}
+<a href="{{ nexturl }}" class="btn btn--primary btn--small" title="{{ nexttitle }}  (flèche >)"> Suivant </a>
+{% else %}
+<a href="" class="btn btn--inverse btn--small" title="C'est le dernier !!"> <strike>Suivant</strike> </a>
+{% endif %}
+
+<a href="{{ dernier.url }}" class="btn btn--primary btn--small" title="{{ dernier.short }}"> Last! </a>
+
+
+<script>
+/* post pagination keyboard shortcuts */
+document.body.onkeyup = function(e){
+  if (e.keyCode == '37') { window.location = '{{ prevurl }}'; } // left arrow key
+  if (e.keyCode == '39') { window.location = '{{ nexturl }}'; } // right arrow key
+};
+</script>
