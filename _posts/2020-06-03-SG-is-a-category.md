@@ -5,7 +5,7 @@ categories:
   - (méta-)maths
   - blog
   - humour
-  - in english
+  - english
 tags:
   - arXiv
   - Géométrie symplectique
