@@ -117,6 +117,9 @@ collections:
   metamaths:
     output: true
     permalink: /metamaths/:name
+  annexes:
+    output: true
+    permalink: /annexes/:name
 
 defaults:
   # _posts
@@ -149,6 +152,11 @@ defaults:
       author_profile: true
   - scope:
       type: metamaths
+    values:
+      layout: default
+      read_time: true
+  - scope:
+      type: annexes
     values:
       layout: default
       read_time: true

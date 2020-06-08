@@ -1,0 +1,26 @@
+---
+layout: archive
+title: "Des méta-maths"
+excerpt: ""
+permalink: /metamaths/
+author_profile: true
+---
+
+Projet python qui a démarré par la récupération des métadonnées de plusieurs milliers d'articles sur arXiv.
+
+
+<ul>
+  {% for p in site.metamaths %}
+    <li>
+
+      <a href="{{ p.url }}">{{ p.title }}</a><br>
+      {{ p.excerpt }}
+      {% if p.annexe %}
+      <br>
+      &nbsp; &#x21B3; annexe : <a href="{{ p.annexe_url }}" class="btn btn--inverse btn--small">{{ p.annexe }}</a>
+      {% endif %}
+<!--      <p>{{ author.content | markdownify }}</p>  -->
+    </li>
+    {% endfor %}
+</ul>
+
