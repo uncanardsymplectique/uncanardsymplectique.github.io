@@ -33,7 +33,7 @@ Les arguments principaux (compressés) sont les suivants.
 
 Ce second point est moins handicapant dans le cadre dans lequel je me place (titres et résumés d'articles de maths) surtout si l'on autorise les paires de mots successifs fréquentes, ce que j'arrive beaucoup mieux à faire depuis mon [chamadaire symplectique](/metamaths/2020-05-19-le-chameau-symplectique#finalement--créer-le-nuage-de-mots) qui lui n'en contenait pas. Il faut juste être un peu soigneux, puisque l'on trouve par exemple des "Witten invariants" qui sont en fait des "Gromov--Witten invariants", que l'on peut corriger de sorte que "Gromov--Witten" soit la paire retenue.
 
-{% include figure image_path="/assets/images/metamaths/galerie_evolution/arXiv_SG_2019_All.png" alt="La sphère symplectique (2019)" width="200px" %}{: .align-right .width-third}
+{% include figure image_path="/assets/images/metamaths/gallerie_evolution/arXiv_SG_2019_All.png" alt="La sphère symplectique (2019)" width="200px" %}{: .align-right .width-third}
 Le résultat est ci-contre.
 
 **Remarque.** Un clic droit sur le dessin puis _ouvrir l'image dans un autre onglet_ vous le montrera en vraie grandeur i.e. en plus gros. Idem pour les gifs ci-dessous.
