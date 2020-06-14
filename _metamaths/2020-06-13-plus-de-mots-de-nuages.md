@@ -10,7 +10,7 @@ tags:
   - arXiv
   - Géométrie symplectique
   - nuages de mots
-excerpt: "Suite directe du précédent, de mon exploration des métadonnées d'articles publiés sur arXiv, et de mes errances dans WordCloud. Où l'on essaie de voir s'il est possible de faire dire quelque chose aux nuages de mots. Et à défaut, aux sucettes. "
+excerpt: "Suite directe du précédent, de mon exploration des métadonnées d'articles publiés sur arXiv, et de mes errances dans WordCloud. Où l'on essaie de voir s'il est possible de faire dire quelque chose aux nuages de mots, tout en évitant la dépression nuageuse."
 # à retirer quand il y aura plus de page :
 # permalink: /metamaths/
 author_profile: true
