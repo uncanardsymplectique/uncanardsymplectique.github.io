@@ -48,7 +48,7 @@ Comme difficile n'est pas impossible, je me suis dit qu'il fallait pousser un pe
 ###### Du nuage à la capsule météo du journal de 20h
 {% include figure image_path="/assets/images/metamaths/Everything.gif" alt="Les mots les plus utilisés (2002-2019)" width="200px" %}{: .align-right .width-third}
 
-Par exemple, on peut produire des nuages de mots annuels -- mettons des 500 (paires de) mots les plus utilisés chaque année depuis 2002, année où le nombre d'articles publiés en `math.SG` a dépassé 200 --, que l'on peut ensuite assembler en un gif. Idéalement trop rapidement pour que l'on puisse lire quoique ce soit.
+Par exemple, on peut produire des nuages de mots annuels -- mettons des 500 (paires de) mots les plus utilisés chaque année depuis 2002, année où le nombre d'articles publiés en `math.SG` a dépassé 200 --, que l'on peut ensuite assembler en un gif. Idéalement trop rapidement pour que l'on puisse lire quoi que ce soit.
 Réussi, non ?
 
 **Remarque inconsciente.** Moi, ça m'évoque une animation satellitaire type capsule météo journal-de-20-heuresque. J'ai hésité à coller un mini Alain Gillot-Pétré à gauche expliquant que la dépression hamiltonienne était là pour durer... #3615Freud
@@ -70,8 +70,8 @@ def recoloriage(word, font_size, position, orientation, random_state=None, **kwa
 ```
 et retourne une couleur au format `hsl`: teinte (hue), saturation, luminosité ; la partie importante ici étant qu'elle choisit une couleur pour chaque mot (la variable `word`) en fonction de son "importance" dans le nuage, cette importance étant quantifiée par la taille de la police (la variable `font_size`) utilisée par `WordCloud` pour représenter le mot.
 
-La `fonction_ad-hoc` elle-même n'a aucun intérêt même si j'ai passé quelques heures dessus (satanées couleurs !). En fait, choisir un certains nombres de règles pour que les différentes années soient comparables entre elles, tout en gardant un ensemble esthétique, sans trop perdre en lisibilité n'est pas chose aisée.
-Pour cela, j'ai beaucoup appris sur la roue des couleurs et _la **B**onne_ façon de produire des couleurs foncées (augmenter la saturation, réduire la luminosité) grâce à [ce blog][couleurs] à ~~opinions colorées~~ couleurs opinionées. Et donc après quelques heures d'essais divers (une seule couleur et changement de tons, passage lent du vert au bleu, etc.) je me suis résigné un peu plus à privilégier l'esthétique sur la lisibilité (trois passages successifs à travers toute la roue des couleurs -- Blam !).
+La `fonction_ad-hoc` elle-même n'a aucun intérêt même si j'ai passé quelques heures dessus (satanées couleurs !). En fait, choisir un certain nombre de règles pour que les différentes années soient comparables entre elles, tout en gardant un ensemble esthétique, sans trop perdre en lisibilité n'est pas chose aisée.
+Pour cela, j'ai beaucoup appris sur la roue des couleurs et _la **B**onne_ façon de produire des couleurs foncées (augmenter la saturation, réduire la luminosité) grâce à [ce blog][couleurs] à ~~opinions colorées~~ couleurs opinionées. Et donc après quelques heures d'essais divers (une seule couleur et changement de tons, passage lent du vert au bleu, etc.) je me suis résigné un peu plus à privilégier l'esthétique à la lisibilité (trois passages successifs à travers toute la roue des couleurs -- Blam !).
 
 
 ###### "Quand on élimine le hasard, on a plus de contrôle." --- Captain Obvious
@@ -104,7 +104,7 @@ def recoloriage_funky(word, font_size, position, orientation,
     return f"hsl({couleur}, 95%, {luminosite}%)" 
 ```
 
-Les variables `TOP10` et `RANG` sont des variables globales (puisque j'ai besoin qu'elles sortent de la fonction) : `RANG` code la position du mot dans la liste des mots d'une année et `TOP10` construit au fur et à mesure la liste des mots apparus dans le top 10 du `WordCloud` années après années.
+Les variables `TOP10` et `RANG` sont des variables globales (puisque j'ai besoin qu'elles sortent de la fonction) : `RANG` code la position du mot dans la liste des mots d'une année et `TOP10` construit au fur et à mesure la liste des mots apparus dans le top 10 du `WordCloud` année après année.
 
 **Remarque auto-dérisionnelle.** La variable `RANG` permet _évidemment_ une meilleure quantification de l'importance d'un mot dans son `WordCloud` que le paramètre `font_size`. Il est donc clair que _si_ je n'étais pas fondamentalement fainéant, j'aurais modifié le code de ma `fonction_ad-hoc` initiale pour en tirer parti. Seulement voila... j'y ai pensé après et la condition précédente n'est pas vérifiée. #LeRangCEstImportant #PrivateJokeSorry
 {: .notice--danger}
@@ -116,9 +116,9 @@ Les variables `TOP10` et `RANG` sont des variables globales (puisque j'ai besoin
 ###### Un petit dernier pour la route...
 {% include figure image_path="/assets/images/metamaths/Lagrangian_Legendrian.gif" alt="Comparaison " %}{: .align-right .width-third}
 
-Bon évidemment, on peut décliner cela dans tous les sens mais je n'ai pas trouvé d'idée suffisamment intéressante pour pousser plus loin. Voici donc juste une dernière petite capsule météo montrant la prise d'importance années après années de la petite soeur de contact de la lagrangienne.
+Bon évidemment, on peut décliner cela dans tous les sens mais je n'ai pas trouvé d'idée suffisamment intéressante pour pousser plus loin. Voici donc juste une dernière petite capsule météo montrant la prise d'importance année après année de la petite soeur de contact de la lagrangienne.
 
-En fait, et à terme, j'espère pouvoir essayer l'[analyse de réseau de texte](https://infranodus.com/) qui semble un outil plus intéressant (et aussi très esthétique de mon point de vue) pour analyser des textes en gardant probablement partie du contexte. Mais ce sera pour plus tard donc, et avec une autre source de textes.
+En fait, et à terme, j'espère pouvoir essayer l'[analyse de réseau de texte](https://infranodus.com/) qui semble un outil plus intéressant (et aussi très esthétique de mon point de vue) pour analyser des textes en gardant probablement une partie du contexte. Mais ce sera pour plus tard donc, et avec une autre source de textes.
 
 ~~The end.~~
 
