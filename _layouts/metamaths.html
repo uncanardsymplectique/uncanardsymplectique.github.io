@@ -45,7 +45,8 @@ layout: default
         {{ content }}
           {% if page.link %}<div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
 	  {% if page.annexe %}<div><a href="{{ page.annexe_url }}" class="btn btn--info">Annexe : {{ page.annexe }}</a></div>{% endif %}
-	        {% include general-prev-next.html %}
+	  <br>
+	  {% include general-prev-next.html %}
       </section>
 
       <footer class="page__meta">
